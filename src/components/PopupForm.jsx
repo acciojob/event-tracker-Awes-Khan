@@ -74,8 +74,6 @@ const PopupForm = ({ isOpen, onClose, onSubmit, isEditConfirmation, editData, on
                       <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
                           <h2 className="text-xl font-bold mb-4">{editData ? "Modify" : "Create"} Event</h2>
                           <form onSubmit={editData ? handleEdit : handleSubmit}>
-                              <div className="mb-4">
-                                  <label className="block text-gray-700">Title</label>
                                   <input
                                       type="text"
                                       value={title}
@@ -84,9 +82,6 @@ const PopupForm = ({ isOpen, onClose, onSubmit, isEditConfirmation, editData, on
                                       placeholder="Event Title"
                                       required
                                   />
-                              </div>
-                              <div className="mb-4">
-                                  <label className="block text-gray-700">Location</label>
                                   <input
                                       type="text"
                                       value={location}
@@ -95,7 +90,6 @@ const PopupForm = ({ isOpen, onClose, onSubmit, isEditConfirmation, editData, on
                                       placeholder="location"
                                       required
                                   />
-                              </div>
                               <div className="flex justify-between">
                                   <button type="button" onClick={onClose} className="bg-gray-400 text-white px-4 py-2 rounded">
                                       Cancel
