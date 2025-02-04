@@ -81,6 +81,7 @@ const PopupForm = ({ isOpen, onClose, onSubmit, isEditConfirmation, editData, on
                                       value={title}
                                       onChange={(e) => setTitle(e.target.value)}
                                       className="w-full p-2 border border-gray-300 rounded"
+                                      placeholder="Event Title"
                                       required
                                   />
                               </div>
@@ -91,6 +92,7 @@ const PopupForm = ({ isOpen, onClose, onSubmit, isEditConfirmation, editData, on
                                       value={location}
                                       onChange={(e) => setLocation(e.target.value)}
                                       className="w-full p-2 border border-gray-300 rounded"
+                                      placeholder="location"
                                       required
                                   />
                               </div>
