@@ -91,7 +91,7 @@ const PopupForm = ({ isOpen, onClose, onSubmit, isEditConfirmation, editData, on
                                       required
                                   />
                               <div className="flex justify-between mm-popup__box__footer__right-space">
-                                  <button type="button" onClick={onClose} className="mm-popup__btn bg-gray-400 text-white px-4 py-2 rounded">
+                                  <button type="button" onClick={onClose} className="bg-gray-400 text-white px-4 py-2 rounded">
                                       Cancel
                                   </button>
                                   <button type="submit" className="mm-popup__btn bg-green-400 text-white px-4 py-2 rounded hover:bg-blue-700">
