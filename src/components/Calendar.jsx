@@ -89,10 +89,10 @@ const MyCalendar = () => {
         <div className="flex justify-between items-center p-4 bg-gray-100 shadow-md">
         {/* Navigation Buttons */}
         <div>
-            <button onClick={() => onNavigate("PREV")} className="px-3 mx-2 py-2 text-white bg-blue-700 rounded-l">
+            <button onClick={() => onNavigate("PREV")} className="btn px-3 mx-2 py-2 text-white bg-blue-700 rounded-l">
             ⬅ Prev
             </button>
-            <button onClick={() => onNavigate("NEXT")} className="px-3 mx-2 py-2 text-white bg-blue-700 rounded-r">
+            <button onClick={() => onNavigate("NEXT")} className="btn px-3 mx-2 py-2 text-white bg-blue-700 rounded-r">
             Next ➡
             </button>
         </div>
@@ -104,19 +104,19 @@ const MyCalendar = () => {
         <div className="flex gap-2">
             <button
             onClick={() => props.setFilter("All")}
-            className={`px-4 py-2 rounded text-white bg-blue-700`}
+            className={`btn px-4 py-2 rounded text-white bg-blue-700`}
             >
             All
             </button>
             <button
             onClick={() => props.setFilter("Past")}
-            className={`px-4 py-2 rounded bg-red-400 text-white`}
+            className={`btn px-4 py-2 rounded bg-red-400 text-white`}
             >
             Past
             </button>
             <button
             onClick={() => props.setFilter("Upcoming")}
-            className={`px-4 py-2 rounded bg-green-400 text-white`}
+            className={`btn px-4 py-2 rounded bg-green-400 text-white`}
             >
             Upcoming
             </button>
